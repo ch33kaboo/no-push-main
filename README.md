@@ -2,8 +2,6 @@
 
 ### Global pre-push hook preventing developers from pushing changes directly to the main branch.
 
-<br>
-
 <div align="center">
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/97px-Git_icon.svg.png?20220905010122" height="70" width="70"/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -24,3 +22,8 @@ curl https://raw.githubusercontent.com/ch33kaboo/no-push-main/main/script.sh >> 
 ```
 
 the previous script uses the ```curl``` command-line tool to download the content of a bash script hosted on GitHub at the following URL: "https://raw.githubusercontent.com/ch33kaboo/no-push-main/main/script.sh". the script is then appended to the end of your      "~/.bashrc" file.
+
+## NOTE
+
+- the hook (so far) only works for those who use bash as their shell, the hook doesn't work with shells like ```Zsh``` or ```Fish``` ...etc .
+- the hook only works when your remote repository is named ```origin```. If you have a different remote repository name, you'll need to modify the script accordingly.
